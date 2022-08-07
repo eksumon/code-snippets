@@ -1,0 +1,13 @@
+chmod -R u+rwX,go+rX,go-w /path/to/dir
+
+
+which basically means:
+
+to change file modes -Recursively by giving:
+
+user: read, write and eXecute permissions,
+group and other users: read and eXecute permissions, but not -write permission.
+Please note that X will make a directory executable, but not a file, unless it's already searchable/executable.
+
+
+stackoverflow link: https://stackoverflow.com/questions/18817744/change-all-files-and-folders-permissions-of-a-directory-to-644-755
