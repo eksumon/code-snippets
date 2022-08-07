@@ -1,0 +1,25 @@
+*Initialize Git In Local Machine and make your first commit:
+
+git init
+git add .
+git commit -m "initial commit"
+
+
+*Now Login to Github account Add a new Reposiratory and copy the remote url. Sample: https://github.com/eksumon/code-snippets.git
+*Then in Local Machine:
+
+git remote add origin https://github.com/eksumon/code-snippets.git
+git branch -M main
+git push -u origin main
+
+
+*Creating a new Branch and Setting it as current brach in local machine:
+
+git checkout -b branch-name           // Creates branch and sets origin to newly created branch
+
+git push -u origin brach-name        // for the first push. from the next push just use git push
+
+git checkout branch                  // For switching branch
+
+
+
